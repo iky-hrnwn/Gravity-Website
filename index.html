@@ -7,11 +7,13 @@
     <link rel="icon" type="image/png" href="./assets/logo.png">
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
-  <body class="text-slate-800 font-inter">
+  <body class="text-slate-800 font-inter max-w-[1512px mx-auto]">
     <div class="relative h-screen bg-cover bg-center" style="background-image: url('assets/hero-image.webp');">
-      <!-- Gradient Overlay -->
+
+    <!-- Overlay -->
     <div class="absolute inset-0 bg-[#00B4FE]/30"></div>
-      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white"></div>
+
     <!-- Navbar -->
     <nav
       id="navbar"
@@ -36,46 +38,15 @@
             <a href="#home" class="hover:text-blue-200 font-medium">Home</a>
             <a href="#about" class="hover:text-blue-200 font-medium">About Us</a>
             <a href="#services" class="hover:text-blue-200 font-medium">Service</a>
-            <a href="#contact" class="hover:text-blue-200 font-medium">Contact</a>
+            <a href="/pages/contact.html" class="hover:text-blue-200 font-medium">Contact</a>
           </div>
         </div>
       </div>
     </nav>
 
-    <script>
-      const navbar = document.getElementById("navbar");
-      const menu = document.getElementById("menu");
-      const brand = document.getElementById("brand");
-
-
-      window.addEventListener("scroll", () => {
-      if (window.scrollY > 50) {
-      navbar.classList.add(
-      "bg-white/70",
-      "backdrop-blur-md",
-      "shadow-lg"
-      );
-      menu.classList.remove("text-white");
-      menu.classList.add("text-[#0644BF]");
-      brand.classList.remove("text-white");
-      brand.classList.add("text-[#0644BF]");
-      } else {
-      navbar.classList.remove(
-      "bg-white/70",
-      "backdrop-blur-md",
-      "shadow-lg"
-      );
-      menu.classList.add("text-white");
-      menu.classList.remove("text-[#0644BF]");
-      brand.classList.add("text-white");
-      brand.classList.remove("text-[#0644BF]");
-      }
-      });
-    </script>
-
-      <!-- Hero Section -->
+    <!-- Hero Section -->
     <section id="home" class="min-h-screen justify-center relative">
-      <div class="max-w-7xl items-center mx-auto px-6 relative z-10 pt-20">
+      <div class="max-w-7xl items-center mx-auto px-6 relative z-10 pt-30">
         <h1 class="text-[96px] font-bold text-white leading-[1.1] tracking-wide mb-10">
             TOGETHER<br>FOR EVERY <br> FLIGHT
         </h1>
@@ -85,13 +56,476 @@
       </div>
 
       <!-- Airplane -->`
-      <img class="absolute right-[-6rem] top-1/7 w-[850px] max-w-none pointer-events-none" src="assets/airplane.png" alt="airplane">
+      <img class="absolute right-1/8 rotate-10 top-1/3 w-[600px] max-w-none pointer-events-none" src="assets/airplane2.png" alt="airplane">
 
-      <div>
-        <a href="">Instagram</a>
+      <div class="max-w-7xl text-white flex flex-row-reverse items-center mx-auto px-6 relative z-10 gap-4 font-light">
         <a href="">LinkedIn</a>
+        <a href="">Instagram</a>
       </div>
     </section>
 
+    <!-- KNOW US BETTER -->
+    <section id="about" class="py-28">
+      <div class="max-w-7xl mx-auto px-6">
+      <h2 class="font-bold mb-4 text-4xl"><span class="text-sky-500">KNOW US</span> BETTER</h2>
+      <p class="max-w-2xl text-sm text-slate-600 leading-relaxed">
+      More than just a spare parts provider; we are a steadfast commitment standing by your side. Understanding the weight of your operational burdens, we act as an extension of your own team—ready to move swiftly to meet every component and material need. Through consistent dedication, we ensure you never fly alone.
+      </p>
+      </div>
+    </section>
+
+    <!-- CAROUSEL -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="mb-12">
+          WHICH FLEETS CAN WE SUPPORT?
+        </h2>
+
+    <!-- Carousel logos -->    
+    <div class="overflow-hidden relative">
+          <div id="logo-track" class="flex gap-16 items-center animate-scroll">
+            <img src="./assets/logo/company1.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company2.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company3.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company4.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company5.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company6.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company7.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company8.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company9.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company10.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company11.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company12.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company13.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company14.png" class="h-10 opacity-80">
+
+            <img src="./assets/logo/company1.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company2.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company3.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company4.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company5.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company6.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company7.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company8.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company9.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company10.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company11.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company12.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company13.png" class="h-10 opacity-80">
+            <img src="./assets/logo/company14.png" class="h-10 opacity-80">
+          </div>
+        </div>
+      </div>
+    </section>    
+
+    <!-- What Can We Do? -->
+    <section class="py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+    
+        <div class="grid lg:grid-cols-4 gap-10 items-start">
+    
+          <!-- Left Text -->
+          <div class="lg:col-span-1">
+            <h2 class="text-4xl font-bold leading-tight">
+              WHAT <span class="text-sky-500">CAN</span><br />
+              WE DO?
+            </h2>
+    
+            <p class="mt-4 text-sm text-slate-500 max-w-xs">
+              Aircraft Parts and Material Supply.
+            </p>
+          </div>
+    
+          <!-- Cards -->
+          <div class="lg:col-span-3">
+            <div class="grid md:grid-cols-3 gap-6">
+    
+              <!-- Card -->
+              <div>
+                <div class="rounded-2xl overflow-hidden">
+                  <img
+                    src="assets/services/material.webp"
+                    class="w-full h-[280px] object-cover"
+                    alt=""
+                  />
+                </div>
+                <p class="mt-3 text-sm text-slate-500">
+                  Aircraft material supply
+                </p>
+              </div>
+    
+              <div>
+                <div class="rounded-2xl overflow-hidden">
+                  <img
+                    src="assets/services/avonics.webp"
+                    class="w-full h-[280px] object-cover"
+                    alt=""
+                  />
+                </div>
+                <p class="mt-3 text-sm text-slate-500">
+                  Avionics
+                </p>
+              </div>
+    
+              <div>
+                <div class="rounded-2xl overflow-hidden">
+                  <img
+                    src="assets/services/expandables.webp"
+                    class="w-full h-[280px] object-cover"
+                    alt=""
+                  />
+                </div>
+                <p class="mt-3 text-sm text-slate-500">
+                  Expandables
+                </p>
+              </div>
+    
+            </div>
+    
+            <!-- Bottom Control -->
+            <div class="mt-10 flex items-center justify-between">
+              <div class="h-px bg-slate-300 w-full mr-6"></div>
+    
+              <div class="flex gap-4">
+                <button
+                  class="w-10 h-10 rounded-full border
+                         flex items-center justify-center
+                         hover:bg-slate-100 transition">
+                  ←
+                </button>
+                <button
+                  class="w-10 h-10 rounded-full bg-sky-500 text-white
+                         flex items-center justify-center
+                         hover:bg-sky-600 transition">
+                  →
+                </button>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+    
+      </div>
+    </section>
+
+<!-- Why Choose Us -->
+<section class="py-32 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-2 gap-24 items-start">
+
+      <!-- LEFT -->
+      <div>
+        <h2 class="text-5xl font-bold leading-tight">
+          WHY <span class="text-sky-500">CHOOSE</span> US?
+        </h2>
+
+        <p class="mt-6 text-base text-slate-500 max-w-lg">
+          Your Strategic Partner in Aviation Excellence in an industry where
+          precision is everything, we are here to provide certainty. Here is
+          why you can trust us with your aviation needs.
+        </p>
+
+        <div class="mt-14 rounded-3xl overflow-hidden shadow-xl">
+          <img
+            src="assets/vertical.jpg"
+            class="w-full h-[612px] object-cover"
+            alt="Aviation"
+          />
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="space-y-12">
+
+        <!-- Item -->
+        <div class="flex gap-6">
+          <span class="mt-2 w-5 h-5 rounded-full bg-sky-500 shrink-0"></span>
+          <div>
+            <h4 class="font-semibold text-lg text-slate-800">
+              Certified Quality Management
+            </h4>
+            <p class="mt-2 text-sm leading-relaxed text-slate-500 max-w-xl">
+              We implement ISO 9001:2015 standards specifically tailored for the
+              aviation parts supply chain. Our commitment to quality is not just
+              a promise, but a measurable system. On October 16, 2025, our team
+              was certified through intensive training led by an Advanced TOT
+              (Training of Trainers) Holder, ensuring high-level competence in
+              maintaining product integrity.
+            </p>
+          </div>
+        </div>
+        <div class="h-px bg-slate-200"></div>
+
+        <div class="flex gap-6">
+          <span class="mt-2 w-5 h-5 rounded-full bg-sky-500 shrink-0"></span>
+          <div>
+            <h4 class="font-semibold text-lg text-slate-800">
+              Operational Excellence & Compliance
+            </h4>
+            <p class="mt-2 text-sm leading-relaxed text-slate-500 max-w-xl">
+              We guarantee the integrity of every component through a rigorous
+              and standardized operational lifecycle. Our scope of expertise
+              encompasses Procurement, Receiving Inspection, Material Control,
+              Shipping, and Record Keeping, all specifically tailored for
+              aviation part suppliers. These procedures are executed by a
+              professional team that underwent intensive training on October
+              16, 2025, under the direct guidance of an Advanced TOT Holder,
+              ensuring absolute accuracy and full traceability at every stage.
+            </p>
+          </div>
+        </div>
+        <div class="h-px bg-slate-200"></div>
+
+        <div class="flex gap-6">
+          <span class="mt-2 w-5 h-5 rounded-full bg-sky-500 shrink-0"></span>
+          <div>
+            <h4 class="font-semibold text-lg text-slate-800">
+              Global Expertise in the Modern Era
+            </h4>
+            <p class="mt-2 text-sm leading-relaxed text-slate-500 max-w-xl">
+              Our team possesses vast global experience within the modern
+              aviation ecosystem. By staying ahead of international market
+              dynamics, latest regulations, and emerging technologies, we
+              deliver solutions that align perfectly with the demands of
+              today’s aviation industry.
+            </p>
+          </div>
+        </div>
+        <div class="h-px bg-slate-200"></div>
+
+        <div class="flex gap-6">
+          <span class="mt-2 w-5 h-5 rounded-full bg-sky-500 shrink-0"></span>
+          <div>
+            <h4 class="font-semibold text-lg text-slate-800">
+              Your Extended Aviation Team
+            </h4>
+            <p class="mt-2 text-sm leading-relaxed text-slate-500 max-w-xl">
+              We see ourselves as an extension of your team, not just an
+              external vendor. Our dedication lies in easing your operational
+              load and ensuring every technical challenge is met with a swift
+              solution. Because to us, true partnership is about moving forward
+              together.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Meet Us At -->
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-blue-600 text-2xl md:text-3xl font-bold mb-4">
+          MEET US AT
+        </h2>
+        <p class="text-slate-500 max-w-2xl mx-auto mb-6 text-sm md:text-base">
+          We attend major aviation industry events and conferences worldwide. Connect with our team to discuss your aircraft material needs and discover how we can support your operations.
+        </p>
+    
+        <!-- MAP -->
+        <div class="relative max-w-5xl mx-auto">
+    
+          <!-- MAP IMAGE -->
+          <img
+            src="./assets/map.png"
+            alt="World Map"
+            class="w-full opacity-90"
+          />
+    
+          <!-- LOCATION DOT : JAKARTA -->
+          <div
+            class="absolute top-[64%] left-[72%] group cursor-pointer"
+          >
+            <!-- Ping animation -->
+            <span class="absolute inline-flex h-6 w-6 rounded-full bg-blue-500 opacity-30 animate-ping"></span>
+    
+            <!-- Dot -->
+            <span class="relative inline-flex h-4 w-4 rounded-full bg-blue-600 border-2 border-white"></span>
+    
+            <!-- POPUP -->
+            <div
+              class="absolute left-6 top-1/2 -translate-y-1/2
+                     opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100
+                     transition duration-300 pointer-events-none"
+            >
+              <div class="bg-white rounded-xl shadow-lg px-4 py-3 flex items-center gap-3">
+                <!-- Icon -->
+                <span class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white">
+                  📍
+                </span>
+    
+                <!-- Text -->
+                <div class="text-left">
+                  <p class="text-sm font-semibold text-slate-800">
+                  Wisma Keiai, Jl. Jenderal
+                  </p>
+                  <p class="text-xs text-slate-500">
+                  Sudirman Kota Jakarta Pusat, DKI Jakarta 10220
+                  </p>
+                  <p class="text-xs text-slate-500">
+                  DKI Jakarta 10220
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+
+ <!-- Contact -->
+<section id="contact" class="py-32 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Cards -->
+    <div class="grid md:grid-cols-2 gap-10 items-stretch">
+
+      <!-- Left Card -->
+      <div class="bg-[#F1F1F1] rounded-[28px] p-12 flex flex-col justify-between min-h-[360px]">
+        <div>
+          <h3 class="text-4xl font-bold text-[#0644BF] leading-tight mb-8">
+            Let’s Be<br />Partner!
+          </h3>
+
+          <div class="space-y-5 text-sm text-slate-700">
+            <div class="flex items-center gap-4">
+              <span class="text-lg">✉️</span>
+              <span>Hello@gravity.com</span>
+            </div>
+            <div class="flex items-center gap-4">
+              <span class="text-lg">📞</span>
+              <span>+62 812-9438-0793</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social -->
+        <div class="flex gap-6 mt-10 text-slate-800 text-lg">
+          <span>📷</span>
+          <span class="font-semibold">in</span>
+        </div>
+      </div>
+      
+      <!-- Right Card -->
+      <div class="bg-[#0A5E8F] rounded-[28px] p-14 flex flex-col justify-center text-center min-h-[360px]">
+        <h3 class="text-4xl font-bold text-[#38BDF8] mb-6">
+          Let’s Know Each Other’s
+        </h3>
+        <p class="text-sm text-white/80 max-w-md mx-auto leading-relaxed">
+          (Your Email won’t go unnoticed; we are committed to reviewing every Email)
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Button -->
+    <div class="mt-14 flex justify-center">
+      <button
+        class="bg-[#5BAED6] hover:bg-[#4AA1CB]
+               text-white font-semibold
+               px-20 py-4 rounded-full
+               shadow-md
+               transition-all duration-300">
+        Get in Touch
+      </button>
+    </div>
+
+  </div>
+</section>
+ 
+
+      <!-- Footer -->
+      <footer class="bg-white py-24">
+        <div class="max-w-7xl mx-auto px-6">
+      
+          <!-- Top -->
+          <div class="grid md:grid-cols-2 gap-96 mb-10">
+      
+            <!-- Left -->
+            <div>
+              <h4 class="font-semibold text-lg mb-4">
+                GRAVITY Headquarter
+              </h4>
+      
+              <div class="flex items-start gap-3 text-sm text-slate-600 max-w-sm">
+                <span class="mt-1">📍</span>
+                <p>
+                  Wisma Keiai, Jl. Jenderal Sudirman Kota Jakarta Pusat,
+                  DKI Jakarta 10220
+                </p>
+              </div>
+            </div>
+      
+            <!-- Right -->
+            <div>
+              <h4 class="font-semibold text-lg mb-4">
+                Follow Us On
+              </h4>
+      
+              <p class="text-sm text-slate-600 max-w-sm mb-6">
+                Stay connected with us on social media for the latest
+                updates and industry news.
+              </p>
+      
+              <div class="flex gap-8 text-sm text-slate-600">
+                <a href="#" class="hover:text-black transition">
+                  Term of services
+                </a>
+                <a href="#" class="hover:text-black transition">
+                  Privacy Policy
+                </a>
+              </div>
+            </div>
+      
+          </div>
+      
+          <!-- Bottom -->
+          <div class="text-center space-y-3">
+            <h2 class="text-xl font-semibold tracking-wide">
+              GRAVITY
+            </h2>
+            <p class="text-sm text-slate-500">
+              © 2026 by Gravity, All rights reserved.
+            </p>
+          </div>
+      
+        </div>
+      </footer>
   </body>
+  <!-- Navbar animate -->
+  <script>
+    const navbar = document.getElementById("navbar");
+    const menu = document.getElementById("menu");
+    const brand = document.getElementById("brand");
+
+
+    window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+    navbar.classList.add(
+    "bg-white/70",
+    "backdrop-blur-md",
+    "shadow-lg"
+    );
+    menu.classList.remove("text-white");
+    menu.classList.add("text-[#0644BF]");
+    brand.classList.remove("text-white");
+    brand.classList.add("text-[#0644BF]");
+    } else {
+    navbar.classList.remove(
+    "bg-white/70",
+    "backdrop-blur-md",
+    "shadow-lg"
+    );
+    menu.classList.add("text-white");
+    menu.classList.remove("text-[#0644BF]");
+    brand.classList.add("text-white");
+    brand.classList.remove("text-[#0644BF]");
+    }
+    });
+  </script>
 </html>
