@@ -12,7 +12,9 @@
 
     <!-- Overlay -->
     <div class="absolute inset-0 bg-[#00B4FE]/30"></div>
-    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white">
+      
+    </div>
 
     <!-- Navbar -->
     <nav
@@ -46,7 +48,7 @@
 
     <!-- Hero Section -->
     <section id="home" class="min-h-screen justify-center relative">
-      <div class="max-w-7xl items-center mx-auto px-6 relative z-10 pt-30">
+      <div class="max-w-7xl items-center mx-auto px-6 relative z-10 pt-28">
         <h1 class="text-[96px] font-bold text-white leading-[1.1] tracking-wide mb-10">
             TOGETHER<br>FOR EVERY <br> FLIGHT
         </h1>
@@ -56,7 +58,7 @@
       </div>
 
       <!-- Airplane -->`
-      <img class="absolute right-1/8 rotate-10 top-1/3 w-[600px] max-w-none pointer-events-none" src="assets/airplane2.png" alt="airplane">
+      <img class="absolute left-1/2 rotate-10 top-1/3 w-[600px] max-w-none pointer-events-none" src="assets/airplane2.png" alt="airplane">
 
       <div class="max-w-7xl text-white flex flex-row-reverse items-center mx-auto px-6 relative z-10 gap-4 font-light">
         <a href="">LinkedIn</a>
@@ -118,95 +120,132 @@
       </div>
     </section>    
 
-    <!-- What Can We Do? -->
-    <section class="py-28 bg-white">
-      <div class="max-w-7xl mx-auto px-6">
-    
-        <div class="grid lg:grid-cols-4 gap-10 items-start">
-    
-          <!-- Left Text -->
-          <div class="lg:col-span-1">
-            <h2 class="text-4xl font-bold leading-tight">
-              WHAT <span class="text-sky-500">CAN</span><br />
-              WE DO?
-            </h2>
-    
-            <p class="mt-4 text-sm text-slate-500 max-w-xs">
-              Aircraft Parts and Material Supply.
-            </p>
-          </div>
-    
-          <!-- Cards -->
-          <div class="lg:col-span-3">
-            <div class="grid md:grid-cols-3 gap-6">
-    
-              <!-- Card -->
-              <div>
-                <div class="rounded-2xl overflow-hidden">
-                  <img
-                    src="assets/services/material.webp"
-                    class="w-full h-[280px] object-cover"
-                    alt=""
-                  />
-                </div>
-                <p class="mt-3 text-sm text-slate-500">
-                  Aircraft material supply
-                </p>
+ <!-- What Can We Do? -->
+<section class="py-28 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="grid lg:grid-cols-4 gap-10 items-start">
+
+      <!-- Left Text -->
+      <div class="lg:col-span-1">
+        <h2 class="text-4xl font-bold leading-tight">
+          WHAT <span class="text-sky-500">CAN</span><br />
+          WE DO?
+        </h2>
+
+        <p class="mt-4 text-sm text-slate-500 max-w-xs">
+          Aircraft Parts and Material Supply.
+        </p>
+      </div>
+
+      <!-- Slider -->
+      <div class="lg:col-span-3">
+
+        <!-- VIEWPORT -->
+        <div class="overflow-hidden">
+          <!-- SLIDER TRACK -->
+          <div
+            id="slider"
+            class="flex gap-6 transition-transform duration-500 ease-in-out"
+          >
+
+            <!-- CARD 1 -->
+            <div class="min-w-[calc(33.333%-1rem)]">
+              <div class="rounded-2xl overflow-hidden">
+                <img src="assets/services/material.webp"
+                     class="w-full h-[280px] object-cover" />
               </div>
-    
-              <div>
-                <div class="rounded-2xl overflow-hidden">
-                  <img
-                    src="assets/services/avonics.webp"
-                    class="w-full h-[280px] object-cover"
-                    alt=""
-                  />
-                </div>
-                <p class="mt-3 text-sm text-slate-500">
-                  Avionics
-                </p>
-              </div>
-    
-              <div>
-                <div class="rounded-2xl overflow-hidden">
-                  <img
-                    src="assets/services/expandables.webp"
-                    class="w-full h-[280px] object-cover"
-                    alt=""
-                  />
-                </div>
-                <p class="mt-3 text-sm text-slate-500">
-                  Expandables
-                </p>
-              </div>
-    
+              <p class="mt-3 text-sm text-slate-500">
+                Aircraft material supply
+              </p>
             </div>
-    
-            <!-- Bottom Control -->
-            <div class="mt-10 flex items-center justify-between">
-              <div class="h-px bg-slate-300 w-full mr-6"></div>
-    
-              <div class="flex gap-4">
-                <button
-                  class="w-10 h-10 rounded-full border
-                         flex items-center justify-center
-                         hover:bg-slate-100 transition">
-                  ←
-                </button>
-                <button
-                  class="w-10 h-10 rounded-full bg-sky-500 text-white
-                         flex items-center justify-center
-                         hover:bg-sky-600 transition">
-                  →
-                </button>
+
+            <!-- CARD 2 -->
+            <div class="min-w-[calc(33.333%-1rem)]">
+              <div class="rounded-2xl overflow-hidden">
+                <img src="assets/services/avonics.webp"
+                     class="w-full h-[280px] object-cover" />
               </div>
+              <p class="mt-3 text-sm text-slate-500">
+                Avionics
+              </p>
             </div>
-    
+
+            <!-- CARD 3 -->
+            <div class="min-w-[calc(33.333%-1rem)]">
+              <div class="rounded-2xl overflow-hidden">
+                <img src="assets/services/expandables.webp"
+                     class="w-full h-[280px] object-cover" />
+              </div>
+              <p class="mt-3 text-sm text-slate-500">
+                Expandables
+              </p>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="min-w-[calc(33.333%-1rem)]">
+              <div class="rounded-2xl overflow-hidden">
+                <img src="assets/services/consumable.webp"
+                     class="w-full h-[280px] object-cover" />
+              </div>
+              <p class="mt-3 text-sm text-slate-500">
+                Consumable
+              </p>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="min-w-[calc(33.333%-1rem)]">
+              <div class="rounded-2xl overflow-hidden">
+                <img src="assets/services/hard.webp"
+                     class="w-full h-[280px] object-cover" />
+              </div>
+              <p class="mt-3 text-sm text-slate-500">
+                Hard Time Parts
+              </p>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="min-w-[calc(33.333%-1rem)]">
+              <div class="rounded-2xl overflow-hidden">
+                <img src="assets/services/major.webp"
+                     class="w-full h-[280px] object-cover" />
+              </div>
+              <p class="mt-3 text-sm text-slate-500">
+                Major Parts
+              </p>
+            </div>
+
           </div>
         </div>
-    
+
+        <!-- Bottom Control -->
+        <div class="mt-10 flex items-center justify-between">
+          <div class="h-px bg-slate-300 w-full mr-6"></div>
+
+          <div class="flex gap-4">
+            <button
+              id="prev"
+              class="w-10 h-10 rounded-full bg-sky-500 text-white
+                     flex items-center justify-center
+                     hover:bg-sky-600 transition">
+              ←
+            </button>
+            <button
+              id="next"
+              class="w-10 h-10 rounded-full bg-sky-500 text-white
+                     flex items-center justify-center
+                     hover:bg-sky-600 transition">
+              →
+            </button>
+          </div>
+        </div>
+
       </div>
-    </section>
+    </div>
+
+  </div>
+</section>
+
 
 <!-- Why Choose Us -->
 <section class="py-32 bg-white">
@@ -378,15 +417,14 @@
       </div>
     </section>
 
- <!-- Contact -->
+<!-- Contact -->
 <section id="contact" class="py-32 bg-white">
   <div class="max-w-7xl mx-auto px-6">
 
-    <!-- Cards -->
     <div class="grid md:grid-cols-2 gap-10 items-stretch">
 
-      <!-- Left Card -->
-      <div class="bg-[#F1F1F1] rounded-[28px] p-12 flex flex-col justify-between min-h-[360px]">
+      <!-- LEFT CARD -->
+      <div class="bg-[#F1F1F1] rounded-[28px] p-12 mr-24 flex flex-col justify-between min-h-[360px]">
         <div>
           <h3 class="text-4xl font-bold text-[#0644BF] leading-tight mb-8">
             Let’s Be<br />Partner!
@@ -404,39 +442,44 @@
           </div>
         </div>
 
-        <!-- Social -->
         <div class="flex gap-6 mt-10 text-slate-800 text-lg">
           <span>📷</span>
           <span class="font-semibold">in</span>
         </div>
       </div>
-      
-      <!-- Right Card -->
-      <div class="bg-[#0A5E8F] rounded-[28px] p-14 flex flex-col justify-center text-center min-h-[360px]">
-        <h3 class="text-4xl font-bold text-[#38BDF8] mb-6">
-          Let’s Know Each Other’s
-        </h3>
-        <p class="text-sm text-white/80 max-w-md mx-auto leading-relaxed">
-          (Your Email won’t go unnoticed; we are committed to reviewing every Email)
-        </p>
+
+      <!-- RIGHT COLUMN (CARD + BUTTON) -->
+      <div class="flex flex-col gap-10">
+
+        <!-- RIGHT CARD -->
+        <div class="bg-[#0A5E8F] rounded-[28px] p-14 flex flex-col justify-center text-center min-h-[360px]">
+          <h3 class="text-4xl font-bold text-[#38BDF8] mb-6">
+            Let’s Know Each Other’s
+          </h3>
+          <p class="text-sm text-white/80 max-w-md mx-auto leading-relaxed">
+            (Your Email won’t go unnoticed; we are committed to reviewing every Email)
+          </p>
+        </div>
+
+        <!-- BUTTON (SAME WIDTH AS CARD) -->
+        <button
+        href="/pages/contact.html"
+          class="w-full bg-[#5BAED6] hover:bg-[#4AA1CB]
+                 text-white font-semibold
+                 py-4 rounded-full
+                 shadow-md
+                 transition-all duration-300">
+          Get in Touch
+        </button>
+
       </div>
 
     </div>
 
-    <!-- Button -->
-    <div class="mt-14 flex justify-center">
-      <button
-        class="bg-[#5BAED6] hover:bg-[#4AA1CB]
-               text-white font-semibold
-               px-20 py-4 rounded-full
-               shadow-md
-               transition-all duration-300">
-        Get in Touch
-      </button>
-    </div>
-
   </div>
 </section>
+
+
  
 
       <!-- Footer -->
@@ -528,4 +571,36 @@
     }
     });
   </script>
+
+<script>
+  const slider = document.getElementById("slider");
+  const nextBtn = document.getElementById("next");
+  const prevBtn = document.getElementById("prev");
+
+  const totalCards = 6;
+  const visibleCards = 3;
+  const maxIndex = totalCards - visibleCards;
+
+  let index = 0;
+
+  function updateSlider() {
+    const percentage = (100 / visibleCards) * index;
+    slider.style.transform = `translateX(-${percentage}%)`;
+  }
+
+  nextBtn.addEventListener("click", () => {
+    if (index < maxIndex) {
+      index++;
+      updateSlider();
+    }
+  });
+
+  prevBtn.addEventListener("click", () => {
+    if (index > 0) {
+      index--;
+      updateSlider();
+    }
+  });
+</script>
+
 </html>
